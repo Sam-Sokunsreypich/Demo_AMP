@@ -12,9 +12,8 @@
         src="https://cdn.ampproject.org/v0/amp-ad-0.1.js">
   </script>
 <script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
-<!-- AMP Components -->
-  <!-- <script async custom-element="amp-img" src="https://cdn.ampproject.org/v0/amp-img-0.1.js"></script> -->
-  <!-- <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script> -->
+<script async custom-element="amp-navigate-to"
+        src="https://cdn.ampproject.org/v0/amp-navigate-to-0.1.js"></script>
 
   <style amp-boilerplate>
     body{visibility:hidden}
@@ -74,6 +73,19 @@ nav a:hover {
     border: none;
     border-radius: 6px;
     cursor: pointer;
+}
+.btn-primary {
+    padding: 8px 16px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
 }
     .hero { padding:40px 20px; max-width:1200px; margin:auto; }
     .hero-grid { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
@@ -163,10 +175,20 @@ nav a:hover {
 
 <body>
 
-  <!-- HEADER -->
-  <header class="navbar">
+<!-- HEADER / NAVBAR -->
+<header class="navbar">
 
     <!-- LOGO + NAME -->
+    <div class="logo-group">
+            <amp-img
+                src="./assets/pic_logo.png" alt="Logo"
+                width="36"
+                height="36"
+                layout="fixed"
+                >
+            </amp-img>
+        <div class="logo-text">Ddsgnr</div>
+    </div><!-- LOGO + NAME -->
     <div class="logo-group">
         <div class="logo-img">
             <img src="assets/pic_logo.png" alt="Logo">
@@ -249,7 +271,7 @@ nav a:hover {
     </div>
   </section>
 
-<div class="hero">
+<!-- <div class="hero">
   <amp-video
   width="640"
   height="360"
@@ -262,7 +284,7 @@ nav a:hover {
   <source src="./video/Screen Recording 2025-11-19 102539.mp4" type="video/mp4">
 </amp-video>
 
-</div>
+</div> -->
 
 
 
@@ -287,8 +309,10 @@ nav a:hover {
     </div>
     <div class="card-grid">
       <!-- CARD 1 -->
+      <a class="card-link" href="./detail.html" on="tap:AMP.navigateTo(url='./detail.html')">
+ 
       <div class="card">
-        <amp-img style="border-radius: 8px;" src="https://picsum.photos/600/350" width="600" height="350" layout="responsive"></amp-img>
+        <amp-img style="border-radius: 8px;" src="./assets/image5.png" width="600" height="350" layout="responsive"></amp-img>
         <div class="card-info">
           <div>
             <button style="background: #ccc; border: 0px;"><small>Food</small></button>
@@ -299,10 +323,12 @@ nav a:hover {
           <small>Read more ></small>
         </div>
       </div>
-
+</a>
       <!-- CARD 2 -->
+      <a class="card-link" href="./detail.html" on="tap:AMP.navigateTo(url='./detail.html')">
+ 
       <div class="card">
-        <amp-img style="border-radius: 8px;" src="https://picsum.photos/600/350?2" width="600" height="350" layout="responsive"></amp-img>
+        <amp-img style="border-radius: 8px;" src="./assets/image6.png" width="600" height="350" layout="responsive"></amp-img>
         <div class="card-info">
           <div>
             <button style="background: #ccc; border: 0px;"><small>Food</small></button>
@@ -313,10 +339,13 @@ nav a:hover {
           <small>Read more ></small>
         </div>
       </div>
+</a>
 
       <!-- CARD 3 -->
+       <a class="card-link" href="./detail.html" on="tap:AMP.navigateTo(url='./detail.html')">
+ 
       <div class="card">
-        <amp-img style="border-radius: 8px;" src="https://picsum.photos/600/350?3" width="600" height="350" layout="responsive"></amp-img>
+        <amp-img style="border-radius: 8px;" src="./assets/image7.png" width="600" height="350" layout="responsive"></amp-img>
         <div class="card-info">
           <div>
             <button style="background: #ccc; border: 0px;"><small>Food</small></button>
@@ -327,9 +356,12 @@ nav a:hover {
           <small>Read more ></small>
         </div>
       </div>
+</a>
        <!-- CARD 4 -->
+       <a class="card-link" href="./detail.html" on="tap:AMP.navigateTo(url='./detail.html')">
+ 
       <div class="card">
-        <amp-img style="border-radius: 8px;" src="https://picsum.photos/600/350?4" width="600" height="350" layout="responsive"></amp-img>
+        <amp-img style="border-radius: 8px;" src="./assets/image8.png" width="600" height="350" layout="responsive"></amp-img>
         <div class="card-info">
           <div>
             <button style="background: #ccc; border: 0px;"><small>Food</small></button>
@@ -340,10 +372,13 @@ nav a:hover {
           <small>Read more ></small>
         </div>
       </div>
+</a>
 
       <!-- CARD 5 -->
+       <a class="card-link" href="./detail.html" on="tap:AMP.navigateTo(url='./detail.html')">
+ 
       <div class="card">
-        <amp-img style="border-radius: 8px;" src="https://picsum.photos/600/350?5" width="600" height="350" layout="responsive"></amp-img>
+        <amp-img style="border-radius: 8px;" src="./assets/image9.png" width="600" height="350" layout="responsive"></amp-img>
         <div class="card-info">
           <div>
             <button style="background: #ccc; border: 0px;"><small>Food</small></button>
@@ -354,10 +389,13 @@ nav a:hover {
           <small>Read more ></small>
         </div>
       </div>
+</a>
 
       <!-- CARD 6 -->
+       <a class="card-link" href="./detail.html" on="tap:AMP.navigateTo(url='./detail.html')">
+ 
       <div class="card">
-        <amp-img style="border-radius: 8px;" src="https://picsum.photos/600/350?6" width="600" height="350" layout="responsive"></amp-img>
+        <amp-img style="border-radius: 8px;" src="./assets/image10.png" width="600" height="350" layout="responsive"></amp-img>
         <div class="card-info">
           <div>
             <button style="background: #ccc; border: 0px;"><small>Food</small></button>
@@ -368,6 +406,7 @@ nav a:hover {
           <small>Read more ></small>
         </div>
       </div>
+</a>
     </div>
   </section>
 
@@ -380,8 +419,10 @@ nav a:hover {
     </div>
     <div class="card-grid">
       <!-- CARD 1 -->
+        <a class="card-link" href="./detail.html" on="tap:AMP.navigateTo(url='./detail.html')">
+ 
       <div class="card">
-        <amp-img style="border-radius: 8px;" src="https://picsum.photos/600/350" width="600" height="350" layout="responsive"></amp-img>
+        <amp-img style="border-radius: 8px;" src="./assets/image11.png" width="600" height="350" layout="responsive"></amp-img>
         <div class="card-info">
           <div>
             <button style="background: #ccc; border: 0px;"><small>Food</small></button>
@@ -392,10 +433,13 @@ nav a:hover {
           <small>Read more ></small>
         </div>
       </div>
+</a>
 
       <!-- CARD 2 -->
+        <a class="card-link" href="./detail.html" on="tap:AMP.navigateTo(url='./detail.html')">
+ 
       <div class="card">
-        <amp-img style="border-radius: 8px;" src="https://picsum.photos/600/350?2" width="600" height="350" layout="responsive"></amp-img>
+        <amp-img style="border-radius: 8px;" src="./assets/image12.png" width="600" height="350" layout="responsive"></amp-img>
         <div class="card-info">
           <div>
             <button style="background: #ccc; border: 0px;"><small>Food</small></button>
@@ -406,10 +450,13 @@ nav a:hover {
           <small>Read more ></small>
         </div>
       </div>
+</a>
 
       <!-- CARD 3 -->
+        <a class="card-link" href="./detail.html" on="tap:AMP.navigateTo(url='./detail.html')">
+ 
       <div class="card">
-        <amp-img style="border-radius: 8px;" src="https://picsum.photos/600/350?3" width="600" height="350" layout="responsive"></amp-img>
+        <amp-img style="border-radius: 8px;" src="./assets/image13.png" width="600" height="350" layout="responsive"></amp-img>
         <div class="card-info">
           <div>
             <button style="background: #ccc; border: 0px;"><small>Food</small></button>
@@ -420,6 +467,7 @@ nav a:hover {
           <small>Read more ></small>
         </div>
       </div>
+</a>
     </div>
   </section>
     <!-- amp ad -->
