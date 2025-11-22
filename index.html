@@ -1,28 +1,38 @@
 <!doctype html>
 <html ⚡ lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
   <title>AMP Blog Homepage</title>
+
   <link rel="canonical" href="index.html">
+
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 
-  <!-- AMP Runtime -->
   <script async src="https://cdn.ampproject.org/v0.js"></script>
-  <script async custom-element="amp-ad"
-        src="https://cdn.ampproject.org/v0/amp-ad-0.1.js">
-  </script>
-<script async custom-element="amp-video" src="https://cdn.ampproject.org/v0/amp-video-0.1.js"></script>
-<script async custom-element="amp-navigate-to"
-        src="https://cdn.ampproject.org/v0/amp-navigate-to-0.1.js"></script>
 
   <style amp-boilerplate>
-    body{visibility:hidden}
+    body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+    -moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+    -ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;
+    animation:-amp-start 8s steps(1,end) 0s 1 normal both}
+    @-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+    @-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+    @-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+    @-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
+    @keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}
   </style>
+
   <noscript>
     <style amp-boilerplate>
-      body{visibility:visible}
+      body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}
     </style>
   </noscript>
+
+  
+  <script async custom-element="amp-ad"
+          src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+
 
   <style amp-custom>
     body { font-family: Arial, sans-serif; margin:0; }
@@ -188,12 +198,6 @@ nav a:hover {
                 >
             </amp-img>
         <div class="logo-text">Ddsgnr</div>
-    </div><!-- LOGO + NAME -->
-    <div class="logo-group">
-        <div class="logo-img">
-            <img src="assets/pic_logo.png" alt="Logo">
-        </div>
-        <div class="logo-text">Ddsgnr</div>
     </div>
 
     <!-- NAVIGATION -->
@@ -207,6 +211,29 @@ nav a:hover {
 
 </header>
 
+<section class="hero">
+  <amp-carousel type="slides"
+  width="800"
+  height="400"
+  controls
+  loop
+  autoplay
+  delay="2000"  data-next-button-aria-label="Go to next slide"
+  data-previous-button-aria-label="Go to previous slide"
+  role="region"
+  aria-label="Looping carousel">
+  <amp-img src="./assets/pic_cover_families.avif"
+    width="800"
+    height="500"></amp-img>
+  <amp-img src="./assets/pic_cover_family.jpg"
+    width="800"
+    height="500"></amp-img>
+  <amp-img src="./assets/image7.png"
+    width="800"
+    height="500"></amp-img>
+</amp-carousel>
+</section>
+
   <!-- HERO SECTION -->
   <section class="hero">
     <small>Blog</small>
@@ -217,7 +244,7 @@ nav a:hover {
       <div class="hero-grid">
       <!-- Left image -->
       <div>
-        <amp-img src="https://picsum.photos/800/500" width="800" height="500" layout="responsive"></amp-img>
+        <amp-img src="./assets/Image.png" width="800" height="500" layout="responsive"></amp-img>
         <div style="margin-top: 5px;">
           <div>
             <button style="background: #ccc; border: 0px;"><small>Food</small></button>
@@ -232,7 +259,7 @@ nav a:hover {
       <div style="display:grid; gap:15px;">
         <!-- image 1 -->
         <div class="right-image" >
-          <amp-img src="https://picsum.photos/400/250" width="400" height="250" layout="responsive"></amp-img>
+          <amp-img src="./assets/Image2.png" width="400" height="250" layout="responsive"></amp-img>
           <div style="padding-bottom: 20px; padding-top: 20px; ">
             <div>
             <button style="background: #ccc; border: 0px;"><small>Food</small></button>
@@ -244,7 +271,7 @@ nav a:hover {
         </div>
         <!-- image 2 -->
         <div class="right-image" >
-          <amp-img src="https://picsum.photos/400/250?2" width="400" height="250" layout="responsive"></amp-img>
+          <amp-img src="./assets/Image3.png" width="400" height="250" layout="responsive"></amp-img>
           <div style="padding-bottom: 20px; padding-top: 20px; ">
             <div>
             <button style="background: #ccc; border: 0px;"><small>Food</small></button>
@@ -256,7 +283,7 @@ nav a:hover {
         </div>
         <!-- image 3 -->
         <div class="right-image" >
-          <amp-img src="https://picsum.photos/400/250?3" width="350" height="200" layout="responsive"></amp-img>
+          <amp-img src="./assets/Image4.png" width="350" height="200" layout="responsive"></amp-img>
           <div style="padding-bottom: 20px; padding-top: 20px; ">
             <div>
             <button style="background: #ccc; border: 0px;"><small>Food</small></button>
@@ -471,7 +498,7 @@ nav a:hover {
     </div>
   </section>
     <!-- amp ad -->
-<div class="hero">
+<!-- <div class="hero">
        <amp-ad
   type="a9"
   data-amzn_assoc_ad_mode="auto"
@@ -507,7 +534,7 @@ nav a:hover {
   data-height="250"
   data-cid="19626-3798936394"
 >
-</amp-ad>
+</amp-ad> -->
   <!-- FOOTER -->
   <footer class="footer">
     <div class="footer-columns">
